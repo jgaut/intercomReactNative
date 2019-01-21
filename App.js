@@ -23,13 +23,13 @@ class AppScreen extends React.Component {
   }
 
   launch(){
-    const {navigate} = this.props.navigation;
-    navigate('PreCall');
+    
   }
 
   render() {
     return (
-     <View>{this.launch()}</View>
+     <View>{const {navigate} = this.props.navigation;
+    navigate('PreCall');}</View>
     );
   }
 }
