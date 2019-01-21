@@ -22,10 +22,7 @@ class CallScreen extends React.Component {
   }
 
   componentWillMount(){
-    this.setState({ idRoom: this.props.navigation.state.params.idRoom});
-    console.log(this.props.navigation.state.params.idRoom);
-    this.setState({ uri: 'https://appr.tc/r/'+this.state.idRoom});
-    console.log(this.state.uri);
+    console.log("idRoom : " + this.props.navigation.state.params.idRoom);
   }
 
   launch(){
@@ -35,8 +32,7 @@ class CallScreen extends React.Component {
     return (
      <View>
       <WebView
-        source={{uri: this.state.uri}}
-        style={{marginTop: 20}}
+        source={{uri: 'https://appr.tc/r/'+this.props.navigation.state.params.idRoom}}
       />
     </View>
     );
