@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, WebView } from 'react-native';
+import { View, Linking } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import { createAppContainer } from 'react-navigation';
 
