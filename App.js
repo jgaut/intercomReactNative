@@ -20,6 +20,7 @@ class AppScreen extends React.Component {
   }
 
   componentWillMount(){
+    this.launch();
   }
 
   launch(){
@@ -29,7 +30,7 @@ class AppScreen extends React.Component {
 
   render() {
     return (
-     <View>{this.launch()}</View>
+     <View></View>
     );
   }
 }
