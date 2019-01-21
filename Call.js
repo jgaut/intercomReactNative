@@ -21,6 +21,7 @@ class CallScreen extends React.Component {
 
   componentWillMount(){
     console.log('idRoom : ' + this.props.navigation.state.params.idRoom);
+    Linking.openURL('https://appr.tc/r/'+this.props.navigation.state.params.idRoom);
   }
 
   launch(){
@@ -30,7 +31,7 @@ class CallScreen extends React.Component {
     return (
      <View>
       <WebView
-        source={{uri: 'https://appr.tc/r/'+this.props.navigation.state.params.idRoom}}
+        source={{uri: ''}}
       />
     </View>
     );
