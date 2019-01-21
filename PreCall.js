@@ -31,10 +31,6 @@ class PreCallScreen extends React.Component {
     header: null
   };
 
-  updateText = () => {
-  /*  Auth.signIn(this.state.email, this.state.password).then(user => console.log(user)).catch(err => console.log(err));*/
-  }
-
   componentWillMount(){
   }
 
