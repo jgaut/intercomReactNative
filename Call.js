@@ -21,19 +21,16 @@ class CallScreen extends React.Component {
 
   componentWillMount(){
     console.log('idRoom : ' + this.props.navigation.state.params.idRoom);
-    Linking.openURL('https://appr.tc/r/'+this.props.navigation.state.params.idRoom);
+    
   }
 
   launch(){
+    Linking.openURL('https://appr.tc/r/'+this.props.navigation.state.params.idRoom);
   }
 
   render() {
     return (
-     <View>
-      <WebView
-        source={{uri: ''}}
-      />
-    </View>
+      <View>{this.launch()}</View>
     );
   }
 }
