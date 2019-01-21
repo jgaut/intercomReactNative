@@ -33,7 +33,7 @@ class CallScreen extends React.Component {
 
   render() {
     return (
-     <View style={styles.form}>
+     <View>
       <WebView
         source={{uri: this.state.uri}}
         style={{marginTop: 20}}
