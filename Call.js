@@ -8,8 +8,6 @@ class CallScreen extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = {
-    idRoom : '',
-    uri: ''
     }
   }
 
@@ -22,7 +20,7 @@ class CallScreen extends React.Component {
   }
 
   componentWillMount(){
-    console.log("idRoom : " + this.props.navigation.state.params.idRoom);
+    console.log('idRoom : ' + this.props.navigation.state.params.idRoom);
   }
 
   launch(){
