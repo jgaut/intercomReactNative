@@ -20,9 +20,9 @@ class PreCallScreen extends React.Component {
       a=e.data.split("_");
       console.log(a[0]);
       if(a[0]=="callback"){
-        //Linking.openURL('https://appr.tc/r/'+a[1]);
-        const {navigate} = this.props.navigation;
-        navigate('Call', {idRoom: a[1]});
+        Linking.openURL('https://appr.tc/r/'+a[1]);
+        //const {navigate} = this.props.navigation;
+        //navigate('Call', {idRoom: a[1]});
       }
     };
   }
